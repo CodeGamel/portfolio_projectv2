@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <!-- Header -->
+    <h1 class="headernav">Contact Me</h1>                                           
+    <head></head>
+    
+    <body>  
+
+    <link rel="stylesheet" href="index.css">
+    
+    <div>
+        <nav class="headernav"></nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactpage.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li> 
+            
+            <li class = "dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Socials</a>
+                <div class="dropdown-content">
+                    <a href = "LINK TO IG"> Instagram</a>
+                    <a href = "LINK TO FB"> Facebook</a>
+                    <a href = "LINK TO X"> X</a>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+    <div>
+    </div>
+</ul>                                           
+<form>
+    <!-- contact -->
+    <section id = "contact">
+        <h2> Please fill this information:</h2>
+        <form id ="Contact form" action="/submit-form" method="post"></form>
+        <div>
+            <label for="email">Email Address:</label>
+            <input for="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+    </section>
+    <br><br>
+    <!-- Date -->
+    <section>
+        <div>
+            <label for="contactDate">Preferred Contact Date:</label>
+            <input type="date" id="contactDate" name="contactDate">
+        </div>
+    </section>
+    <br><br>
+    <!-- Radio -->
+    <fieldset>
+        <legend Preferred Contact Method:></legend>   
+        <div>
+            <!-- Should be making a couple input boxes -->
+            <label for="phoneMethod">Phone Number:</label>
+            <input for ="radio" id="emailMethod" name="contactMethod" value="phone">
+            <label for ="phoneMethod"></label>
+        </div>
+        <div>
+            <label for ="emailMethod">Email:</label>
+            <input for ="radio" id="emailMethod" name="contactMethod" value="email">
+            <label for="emailMethod"></label>
+        </div>
+    </fieldset>
+    <br><br>
+    <!-- checkboxes -->
+    <div>
+        <fieldset>
+            
+            <legend>How would you like me to contact you?</legend>
+            <div>
+                <input type="checkbox" id="email" name="interests" value="email">
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="phone" name="interests" value="phone">
+                <label for="phone">Phone</label>
+            </div>
+        </div>
+    </fieldset>
+    <br><br>
+    <form id="contactform"></form>
+    <div>
+        <label for="inquiryType">Social Media Platform:</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="" disabled selected>Select your social media platform</option>
+            <option value="https://x.com/">Twitter</option>
+            <option value="https://www.facebook.com/">Facebook</option>
+            <option value="https://www.instagram.com/">Instagram</option>
+        </select>
+    </div>
+    <br>
+    <button type="Submit">Submit</button>
+</body>
+</html>
